@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Registro">
+
+<ScrollView
+    android:layout_width="404dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="40dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="60dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.302"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Nombre"
+            android:textColor="#0024A2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/nombreReg"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Introduce tu nombre"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Apellido"
+            android:textColor="#0024A2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/apellidoReg"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Introduce tu apellido"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Cedula"
+            android:textColor="#0024A2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/cedulaReg"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Introduce tu cedula"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="E-mail"
+            android:textColor="#0024A2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/emailReg"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Introduce tu email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView138"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Ubicación"
+            android:textColor="#0024A2"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/longitd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Longitud: "
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/latitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Latitud: "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/imgPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Imagen de perfil"
+            android:textColor="#0024A2"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageGalelry"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/imageBton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#3DBB02"
+                android:gravity="center"
+                android:text="Galeria"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/camBton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#3DBB02"
+                android:text="Cámara"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Contraseña"
+            android:textColor="#0024A2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/contraReg"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Introduce tu contraseña"
+            android:inputType="textPassword" />
+
+
+
+        <CheckBox
+            android:id="@+id/tyc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Estoy de acuerdo con las politicas y condiciones  de tratamiento de datos" />
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#3DBB02"
+            android:text="Registrese"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

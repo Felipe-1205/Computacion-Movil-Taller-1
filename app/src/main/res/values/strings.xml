@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Talle3</string>
+    <string name="menulogout">Cerrar sesión</string>
+    <string name="menuConfiguracion">Menú configuración</string>
+    <string name="title_activity_ubicacion_usuario">UbicacionUsuario</string>
+
+</resources>
